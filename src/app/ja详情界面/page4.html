@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模态框JS交互应用</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+<button id="btnModal" class="btn btn-default">打开模态窗口</button>
+<div id="myModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!--内容可以被移到其他独立文件中-->
+        </div>
+</div>
+</div>
+<script src="./jquery-3.2.1.js"></script>
+<script src="./bootstrap.js"></script>
+<script>
+    $('#btnModal').click(function(){
+        $('#myModal').modal({
+            backdrop: "static",
+            keyboard: true,
+            show: true,
+            remote:'other.html'
+        });
+    })
+//    $('#myModal').on('show.bs.modal',function(){
+//        alert('马上开始显示窗口！');
+//    })
+//    $('#myModal').on('shown.bs.modal',function(){
+//        alert('窗口刚显示完毕！');
+//    })
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body{
+  margin: 0 auto;
+}
+.ncwg_zu{
+  margin-top:-500px;
+  text-align: center;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+}
+hr{
+  color: white;
+  width: 30%;
+}
+.jies{
+  color: white;
+  float: left;
+}
+#jies{
+  margin-top: -300px;
+  position: absolute;
+  width: 100%;
+}
+#protec{
+  text-align: center;
+}
+#sec{
+  margin-top: 80px;
+}
+.service{
+  color: white;
+  margin-top:-500px;
+  position: absolute;
+  margin-left: -200px;
+}
+.service1{
+  color: white;
+  margin-top: -400px;
+  position: absolute;
+  margin-left: -600px;
+}
+.service2{
+  width: 280px;
+  height: 425px;
+  float: left;
+  margin-left: 30px;
+}
+.inma{
+  text-align: center;
+  margin-top: -230px;
+  position: absolute;
+  color: white;
+  margin-left: 4%;
+}
+#logo{
+  margin-top: 500px;
+  position: absolute;
+  margin-left: 40%;
+  font-size: 25px;
+  font-family: 华文行楷;
+}
+#miaoshu{
+  margin-top: -31px;
+  margin-left:140px;
+}

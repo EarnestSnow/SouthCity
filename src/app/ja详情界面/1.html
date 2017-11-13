@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模态框</title>
+    <link rel="stylesheet" type="text/css" href="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/lanrenzhijia.css">
+    <script type="text/javascript" src="http://sandbox.runjs.cn/uploads/rs/55/sjckzedf/jquery-1.8.0.min.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            $('.theme-login').click(function(){
+                $('.theme-popover-mask').fadeIn(100);
+                $('.theme-popover').slideDown(200);
+            })
+            $('.theme-poptit .close').click(function(){
+                $('.theme-popover-mask').fadeOut(100);
+                $('.theme-popover').slideUp(200);
+            })
+
+        })
+    </script>
+</head>
+<body>
+<div class="theme-buy">
+    <a class="btn btn-primary theme-login yudingbtn" href="javascript:;">立即预定</a>
+</div>
+<div class="theme-popover mod" style="padding: 0;">
+    <!--<div class="tu">-->
+        <!--<img src="" alt="这是图片的位置">-->
+    <!--</div>-->
+    <!--关闭按钮-->
+    <div class="theme-poptit">
+    <a href="javascript:;" title="关闭" class="close">×</a>
+    </div>
+    <div class="biaodan">
+        <form class="tijiao" name="loginform" action="" method="post">
+            <p style="text-align:center;font-size: 18px">房东: <span>房东姓名</span></p>
+            <p style="font-size: 22px;margin-left: 15px"><span>诗和远方</span>:<span>园区近古城清新家庭一房</span></p>
+            <p class="pjia"><span>江苏省苏州市姑苏区山塘街122号-西</span></p>
+            <p class="pjia">入住:2016年11月16日</p>
+            <p class="pjia">退房:2017年11月15日</p>
+            <!--计算年月日时间差-->
+            <p class="pjia" class="pjia">￥198×1晚</p>
+            <p class="pjia">总价: ￥<span>72270</span></p>
+            <p class="pjia"><button class="btnn">确认</button><button class="btnn">取消</button></p>
+            <!--<ol>-->
+            <!--<li><strong>用户名：</strong><input class="ipt" type="text" name="log" value="lanrenzhijia" size="20" /></li>-->
+            <!--<li><strong>密码：</strong><input class="ipt" type="password" name="pwd" value="***" size="20" /></li>-->
+            <!--<li><input class="btn btn-primary" type="submit" name="submit" value=" 登 录 " /></li>-->
+            <!--</ol>-->
+        </form>
+    </div>
+</div>
+</body>
+</html>

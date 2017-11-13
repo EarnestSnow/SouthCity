@@ -1,0 +1,49 @@
+/*body{*/
+  /*background:url("../../assets/image/beijing.jpg");*/
+/*}*/
+.title{
+  font-size:25px;
+  text-align: center;
+}
+.titlt1{
+  margin-left: 20%;
+  font-size: 16px;
+}
+.tlt{
+  margin-left: 20%;
+  font-size: 16px;
+}
+.p1{
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+  margin-left:50px;
+}
+.kuang{
+  margin-left: 80px;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+}
+.kuang1{
+  margin-left:15px;
+  width: 200px;
+  height: 30px;
+  font-size: 16px;
+}
+.h5{
+  font-size: 16px;
+}
+.write{
+  margin-left: 20%;
+}
+.more{
+  max-width: 300px;
+  max-height: 210px;
+  min-width: 300px;
+  min-height: 210px;
+  margin-left:10% ;
+  /*width: 300px;*/
+  /*height: 210px;*/
+}
+

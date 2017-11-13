@@ -1,0 +1,119 @@
+<div class="cotn_principal">
+  <div class="cont_centrar">
+
+    <div class="cont_login">
+      <div class="cont_info_log_sign_up">
+        <div class="col_md_login">
+          <div class="cont_ba_opcitiy">
+
+            <h2>登录</h2>
+            <p>&nbsp;生命本是一场漂泊的漫旅,无论遇到了谁，都会是一个美丽的意外。</p>
+            <button type="button" class="btn btns" data-toggle="modal" data-target="#myModal">
+              登录
+            </button>
+            <br>
+            <p style="right: 20px"><a routerLink="../forget">忘记密码？</a></p>
+          </div>
+
+
+        </div>
+        <div class="col_md_sign_up">
+          <div class="cont_ba_opcitiy">
+            <h2>注册</h2>
+            <p>&nbsp;愿你的城市有清风，有烈酒，也有人是你的归途。
+            </p>
+            <button type="button" class="btn btna" data-toggle="modal" data-target="#myModals">
+              注册
+            </button>
+            <br>
+            <p style="right: 20px"><a routerLink="../boss">我要当房东</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <a routerLink="../index">
+          <p>
+            这城市总是风很大，孤独的人总是晚回家，外面不像你想的那么好，风雨都要自己挡，愿每个独自走夜路的你都足够坚强。
+          </p>
+          <p>
+            The city is always windy, lonely people always come home late, the outside is not as good as you think, the wind and rain are in their own way, and you are strong enough to walk the night alone。
+          </p>
+        </a>
+      </div>
+
+      <div class="cont_back_info">
+        <div class="cont_img_back_grey">
+          <img src="../../assets/image/sign-1.jpg" alt="" />
+        </div>
+
+      </div>
+      <div class="cont_forms">
+        <div class="cont_img_back_">
+          <img src="../../assets/image/sign-2.jpg" alt="" />
+        </div>
+
+        <!--登录-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--模态框-->
+<div class="modal fade" style="margin-top: 200px" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog cldd" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close yangs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">南城挽歌</h2>
+      </div>
+
+      <div class="modal-body cont_form_login">
+        <form #loginForm="ngForm">
+          <input type="text"  #tel="ngModel" pattern="^1[34578]\d{9}$" [(ngModel)]="_telephone" id="telephone" name="loginPhone" placeholder="请输入邮箱或手机号"  class="input" style="margin-top: 20px">
+          <br>
+          <span style="color: red; visibility:hidden" id="red1">手机号或邮箱不正确</span>
+          <input type="password" class="input" #pass="ngModel" minlength="6"  [(ngModel)]="_password" id="password" name="loginPassword" placeholder="密码">
+          <br>
+          <span style="color: red;display: none">密码错误</span>
+          <button type="button" (click)="toLogin(loginForm)" [disabled]="loginForm.form.invalid" class="btn_login">登录</button>
+          <!--<div *ngIf="login_res"-->
+               <!--class="alert alert-danger">-->
+            <!--{{login_res}}-->
+          <!--</div>-->
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--注册模态框-->
+<div class="modal fade" style="margin-top: 200px" id="myModals" tabindex="-1" role="dialog" aria-labelledby="myModalLabels">
+  <div class="modal-dialog cldd" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close yangs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabels">南城挽歌</h2>
+      </div>
+
+      <div class="modal-body cont_form_login">
+        <form #registerFrom="ngForm">
+          <!--注释了  class="form-control" -->
+          <input type="text"  class="input1" #tel="ngModel" pattern="^1[34578]\d{9}$" [(ngModel)]="_telephone" id="telephones" name="registerPhone" placeholder="手机号">
+          <button style="width:85px;height: 52px;margin-top: 20px;margin-left: -35px">发送验证码</button>
+          <!--获取验证码-->
+          <input type="text" placeholder="验证码" class="input">
+
+          <input type="password"  class="input2"  #pass="ngModel" minlength="6"  [(ngModel)]="_password" id="passwords" name="registerPassword" placeholder="密码">
+
+          <button type="button" (click)="toregister(registerFrom)" [disabled]="registerFrom.form.invalid" class="btn_login">注册</button>
+          <!--<div *ngIf="login_res"-->
+          <!--class="alert alert-danger">-->
+          <!--{{login_res}}-->
+          <!--</div>-->
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+</div>

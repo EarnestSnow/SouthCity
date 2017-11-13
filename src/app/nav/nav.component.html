@@ -1,0 +1,40 @@
+<div id="title">
+  <div  class="ncwg-logo col-lg-3 col-lg-offset-1">
+    <a routerLink="/index"><img src="../../assets/image/logo.png" alt="" width="134px" height="56px"></a>
+    <span id="describe">
+            给你家一般的温暖
+        </span>
+  </div>
+
+  <div class="col-lg-2 col-lg-offset-3">
+    <img src="../../assets/image/ncwg-tel.png" alt="" id="ncwg-tel">
+    <span>客服电话：400-069-6060</span>
+  </div>
+  <div>
+    <span id="ncwg-form">
+      <!--登录注册-->
+      <div class="col-lg-1 sign" style="padding: 0" *ngIf="!hidd">
+       <a routerLink="../login"><span>登录/注册</span></a>
+      </div>
+      <!--登录注册的取反——>个人中心-->
+      <div class="col-lg-1 sign nav navbar-nav" style="padding: 0" *ngIf="hidd">
+          <li style="margin-left: -35%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a class="btn"> <i class="fa fa-user-o"></i> {{telephone}} <span class="caret"></span> </a> </li>
+              <div class="dropdown-menu" style="margin-left: -35%;">
+                <li><a routerLink="/user" routerLinkActive="active">个人中心</a></li>
+                <li (click)="out()"><a onclick="location.reload()">退出</a></li>
+              </div>
+        </div>
+      <!--成为房东-->
+      <div class="col-lg-1"  style="padding: 0">
+            <a routerLink="/boss"><span  class="sign">成为房东</span></a>
+          </div>
+      <!--发布房源-->
+      <div class="col-lg-1"  style="padding: 0;">
+        <a routerLink="/bossissue"><span  class="house">发布房源</span></a>
+      </div>
+      <!--<div class="col-lg-1">-->
+      <!--<a routerLink="/user">个人信息</a>-->
+      <!--</div>-->
+    </span>
+  </div>
+</div>

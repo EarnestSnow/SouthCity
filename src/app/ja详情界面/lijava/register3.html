@@ -1,0 +1,117 @@
+<!--<%@ page contentType="text/html;charset=utf-8" %>-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>redister3</title>
+		<style type="text/css">
+			html,head,body{
+				margin:0;
+				padding:0;
+			}
+			#div0{
+				width:100%;
+				height:100%;
+				float:left;
+			}
+			#div1{
+				width:100%;
+				height:10%;
+				background-color:green;
+			}
+			#div2{
+				width:100%;
+				height:100%;
+			}
+			#div2-1{
+				width:40%;
+				height:100%;
+				margin-left:38%;
+				margin-top:120px;
+				
+			}
+			#div3{
+				width:100%;
+				height:10%;
+				background-color:green;
+			}
+			#div4{
+				width:300px;
+				height:40px;
+				border:1px solid red;
+			}
+			#div4-2{
+				border:1px solid yellow;
+				
+				
+			}
+			#dl{
+				font-size:30px;
+			}
+			#span{
+				margin-left:150px;
+				font-color:chartreuse;
+				
+			}
+			#b-1{
+				font-color:chartreuse;
+			}
+			.text{
+				width:300px;
+				height:40px;
+			}
+			.password{
+				width:300px;
+				height:40px;
+			}
+			#submit{
+				width:300px;
+				height:40px;
+				background-color:green;
+				border-radius:20px;
+				border:none;
+			}
+			
+				
+			
+			/*.add{
+				width:400px;
+				height:400px;
+				background-color:#7FFF00;
+				
+				
+			}*/
+		</style>
+	</head>
+	<body>
+		<div id="div0">
+			<div id="div1">
+				<b style=font-size:40px;>共享e家</b>
+			</div>
+			<div id="div2">
+				<div id="div2-1">
+					<form action="user.do" method="post" class="add">
+						<b id="dl">找回密码</b><br/>
+						<p>&nbsp;</p>
+						<div id="div4">
+							<b><input type="text" class="text" placeholder="请输入你的手机号"/></b>
+							<div id="div4-2">
+								<input type="submit" value="发送验证码"/>
+							</div>
+						</div>	
+						
+						<p><input type="text" class="text" placeholder="请输入手机验证码"/></p><br/>
+						<p><input type="password" class="password" placeholder="请输入新的密码"/></p><br/>
+						<p><input type="password" class="password" placeholder="请再次确认密码"/></p><br/>
+						<input type="submit" value="更改完成" id="submit"/>
+					</form>
+				</div>
+			</div>
+			<div id="div3">
+			
+			</div>
+		</div>
+	</body>
+</html>

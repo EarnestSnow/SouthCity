@@ -1,0 +1,32 @@
+body{
+  margin: 0 auto;
+}
+.ncwg-logo{
+  margin-top: -1%;
+}
+#title{
+  margin-top: 2%;
+  width: 100%;
+  line-height: 61px;
+}
+#describe{
+  font-size: 23px;
+  margin-left:10px;
+  margin-top:25px;
+  position: absolute;
+  font-family:华文行楷;
+}
+.house{
+  margin-left:-30px;
+  font-size: 16px;
+}
+.sign{
+  font-size: 16px;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+

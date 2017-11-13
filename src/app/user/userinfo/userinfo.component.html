@@ -1,0 +1,90 @@
+<div>
+  <div class="userinfo-box">
+    <!--上传头像的demo-->
+    <div class="avatar-box">
+      <div class="avatar" id="headimage_div">
+          <img  id="show" style="width:100px;height:100px;" src="../../../assets/image/heard.jpg" alt="">
+      </div>
+      <p>
+        <a  class="alertAvatar" href="javascript:void(0)" class="file">
+          修改头像 <input type="file" name="" id="file" (change)="c()">
+        </a>
+      </p>
+
+    </div>
+
+    <form class="userinfo-right" #userForm="ngForm">
+      <ul class="userInfo" >
+        <input type="hidden" value="{{userID}}" [(ngModel)]="userID" name="userID">
+        <li class="clearfix"><span class="infoTitle">用 &nbsp;户&nbsp;名：</span>#t_858890273</li>
+        <li class="clearfix" >
+          <span class="infoTitle">昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称：</span>
+          <input   [(ngModel)]="_nick"  name="userNick"
+            class="personLargeInput form-control"
+            type="text"
+            placeholder="4-20个字符（汉字、字母、数字、下划线）"
+            id="nickname"
+            value=""
+            style="width:276px;"
+          >
+        </li>
+        <li class="clearfix">
+          <span class="infoTitle">真实姓名：</span>
+          <input class="personLargeInput form-control"  [(ngModel)]="_userName" name="userName"
+            type="text"
+            id="realname"
+            placeholder="2-10个汉字，或2-20个英文字符"
+            value=""
+            style="width:276px;"
+           >
+
+
+
+          <span class="zm_complete blue ml10" id="zm_tip" (mouseover)="handle_zm_mouse_over()" (mouseout)="handle_zm_mouse_out()"><img src="//staticnew.mayi.com/resources/images/zm_logo.png" style="vertical-align:middle;margin-right:5px;margin-top:-2px;"><span id="zhima_score_result">芝麻信用授权</span></span>
+          <!-- <span class="true-name-tip">请务必使用真实姓名，否则影响我们向您的账户支付</span> -->
+          <div class="zhima-hidden-tip" id="zhima_des">
+                              <p class="zm_accredit">芝麻信用是依法成立的独立信用评估及管理机构。授权后得到分数越高，代表信用越好。</p>
+                              <div class="zm_bottom plr10 c322c27">在蚂蚁短租，若您的芝麻信用分≥600，可享受优质房源入住免押金的特权服务（免押金房源会有相应标示）</div>
+                        </div>
+        </li>
+      <!--</ul>-->
+
+      <!--<ul class="userInfo">-->
+        <!--性别-->
+        <li class="clearfix">
+          <span class="infoTitle">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span>
+          <select class="city-select">
+              <option value="" selected="selected">-请选择-</option>
+              <option value="男"  name="1" >男</option>
+              <option value="女"  name="2">女</option>
+          </select>
+        </li>
+        <li class="clearfix">
+          <span class="infoTitle">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span>
+          <input class="personLargeInput form-control"  [(ngModel)]="_Email" placeholder="请输入Email" type="text" name="userEmail" id="Email">
+          <a id="validemail" class="validemail" rel="nofollow" href="javascript:void(0)">[验证邮箱]</a>
+        </li>
+        <li class="clearfix" id="mobile_div">
+          <span class="infoTitle">手机号码：</span>
+          <input class="personLargeInput form-control" type="text"  id="userPhone"  [(ngModel)]="_telephone"  name="userPhone" placeholder="请输入常用手机号" style="color:#000;">
+            <em class="phone-code" id="code" name="code" code="86">+86</em>
+          <a id="validmobile" class="validmobile" href="javascript:void(0)">[验证手机]</a>
+          <a id="updatemobile" class="updatemobile" href="javascript:void(0)" style="display:none;">[修改手机]</a>
+        </li>
+        <li class="clearfix">
+          <span class="infoTitle">个性签名：</span>
+          <textarea   class="personLargeInputs form-control" [(ngModel)]="_qianming" placeholder="请输入个性签名哦" type="text" name="userQian" id="userQian" cols="30" rows="6"></textarea>
+          <!--<input class="personLargeInput form-control"  [(ngModel)]="_qianming" placeholder="请输入个性签名哦" type="text" name="userQian" id="userQian">-->
+        </li>
+
+      </ul>
+      <div class="submit-wrap">
+        <button id="saveuser" (click)="toupdate(userForm)" [disabled]="userForm.form.invalid" class="save-btn" rel="nofollow" href="javascript:void(0)">保存</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+
+

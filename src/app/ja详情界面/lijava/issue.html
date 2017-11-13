@@ -1,0 +1,181 @@
+<!--<%@ page contentType="text/html;charset=utf-8" %>-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	html,head,body{
+		margin:0;
+		padding:0;
+	}
+	#div0{
+		width:100%;
+		height:150%;
+		float:left;
+	}
+	#bt{
+		color:#009900;
+		margin-left:40px;
+	}
+	#bt2{
+		color:#009900;
+		margin-left:75%;
+	}
+
+	#div1{
+		width:100%;
+		height:40%;
+	}
+	#div2{
+		height:150%;
+		width:100%;
+	}
+	#div2-1{
+		width:60%;
+		height:100%;
+		float:left;
+	}
+	#div2-2{
+		float:right;
+		width:20%;
+		height:100%;
+		margin-top:100px;
+		margin-right:100px;
+	}
+
+
+	#div3{
+		width:100%;
+		height:10%;
+	}
+	#wygx{
+		font-size:40px;
+		margin-left:60px;
+	}
+	#head{
+		font-size:30px;
+		margin-left:60px;
+
+	}
+	.name{
+		font-size:20px;
+		margin-left:60px;
+	}
+	.xlk{
+		width:100px;
+		height:40px;
+		margin-left:60px;
+		border-radius:5px;
+	}
+	.text{
+		width:300px;
+		height:50px;
+		float:right;
+		margin-right:400px;
+
+	}
+	#issue{
+		width:300px;
+		height:60px;
+		background-color:green;
+		margin-left:250px;
+		border-radius:50px;
+		border:none;
+	}
+	#qt{
+		margin-left:80px;
+	}
+	#bc{
+		margin-left:180px;
+	}
+	#db{
+		margin-left:700px;
+	}
+	.chuzu{
+		position:relative;
+	}
+	.jieshu{
+		position:absolute;
+		right:70px;
+		width:300px;
+		height:50px;
+	}
+	.duanxin{position:relative;}
+	.duanxinbtn{
+		position:absolute;
+		left:540px;
+		height:50px;
+	}
+	#tupian{
+		width:100px;
+		height:60px;
+		border:1px solid blue;
+	}
+</style>
+<body>
+<div id="div0">
+	<div id="div1">
+		<p><span id="bt">共享e家</span><span id="bt2">下载共享e家APP&nbsp;&nbsp;&nbsp;&nbsp;返回个人中心</span><p>
+		<img src="images/g1.png">
+	</div>
+	<div id="div2">
+		<div id="div2-1">
+			<p id="head">我要共享</p>
+			<hr/>
+			<p class="name">所在区域
+				<select class="xlk">
+					<option value="-1">江苏</option>
+					<option value="1">河南</option>
+					<option value="2">河北</option>
+					<option value="3">黑龙江</option>
+				</select>
+				<select class="xlk">
+					<option value="-1">苏州</option>
+					<option value="1">南京</option>
+					<option value="2">无锡</option>
+					<option value="3">徐州</option>
+				</select>
+				<select class="xlk">
+					<option value="-1">吴中区</option>
+					<option value="1">高新区</option>
+					<option value="2">虎丘区</option>
+					<option value="3">工业园区</option>
+				</select>
+			</p>
+			<p class="name">小区名称<input type="text"  class="text" placeholder="请输入小区名称"/></p><br/>
+			<p class="name">楼栋号<input type="text" class="text" placeholder="请输入房屋楼栋号"/></p><br/>
+			<p class="name">室号<input type="text" class="text" placeholder="请输入室号"/></p><br/>
+			<p class="name">期望租金<input type="text" class="text" placeholder="请输入您期望出租的价格&nbsp;&nbsp;&nbsp;元/日"/></p><br/>
+			<p class="name">出租类型<input type="text" class="text"  placeholder="请输入您的出租类型（例如：一张床、沙发)"/></p><br/>
+			<p class="name">其他<span id="qt"><input type="checkbox"/>早餐<input type="checkbox"/>空调<input type="checkbox"/>热水器<input type="checkbox"/>停车位</span></p><br/>
+			<p class="name">补充<input type="text" class="text"  placeholder="单行输入"/></p><br/>
+			<p class="name" class="chuzu">预计出租时间<input type="text" class="text"  placeholder="请输入开始时间"/><input type="text" id="text " class="jieshu"  placeholder="请输入结束时间"/></p><br/>
+			<p class="name">业主说<input type="text" class="text"  placeholder="让租客更好了解您的房子请输入0~300字"/></p><br/>
+			<p class="name">房源图<input type="file" /></p><div id="tupian"></div><br/>
+			<p class="name">手机号码<input type="text" class="text"  placeholder="请输入注册时手机号码"/></p><br/>
+			<p class="name">短信验证码<input type="text" class="text" class="duanxin"  placeholder="请输入短信验证码"/><input type="button" class="duanxinbtn" value="获取短信验证码" id=""/></p><br/>
+			<input type="submit" value="立即发布" id="issue"/><br/>
+		</div>
+		<div id="div2-2">
+			<p>选择共享e家的五大理由</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;五分钟响应</p>
+			<p>周一至周日09:00~21:00，挂牌申请五分钟内客服电话核实（非工作时间及法定节假日次日回电），电话核实后2小时上架。</p>
+			<p>千万级曙光量</p>
+			<p>全国e家门店8000+，在房产行业深耕14年+，10万名线下经纪人，千万级线上浏览量，帮您轻松找到买家。</p>
+		</div>
+	</div>
+	<div id="div3">
+		<p id="db">共享e家 科技有限公司</p>
+	</div>
+</div>
+</body>
+</html>
+<html>
+
+
+</html>

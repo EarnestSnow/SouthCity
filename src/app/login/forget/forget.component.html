@@ -1,0 +1,35 @@
+<div class="page-container">
+  <h1>南城挽歌</h1>
+  <form action="" method="post">
+    <div>
+      <input type="text" name="username" class="username" placeholder="邮箱或手机号" autocomplete="off"/>
+    </div>
+    <div>
+      <input type="password" name="password" class="password" placeholder="验证码" oncontextmenu="return false" onpaste="return false" />
+    </div>
+    <a href="../index/index.html"><button id="submit" type="button">验证</button></a>
+  </form>
+  <div class="connect">
+    <h5 class="forget">When you enter your phone number or email, send the authentication code by default. Click here to return to the home page</h5>
+    <h5 class="forget">当您输入完手机号或邮箱时，默认发送验证码。点击 <a href="../index/index.html">这里</a> 返回主页</h5>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>If we can only encounter each other rather than stay with each other,then I wish we had never encountered.</p>
+    <p style="margin-top:20px;">如果只是遇见，不能停留，不如不遇见。</p>
+
+  </div>
+</div>
+
+
+<!-- Javascript -->
+
+<script>
+  window.onload = function()
+  {
+    $(".connect p").eq(0).animate({"left":"0%"}, 600);
+    $(".connect p").eq(1).animate({"left":"0%"}, 400);
+  }
+</script>
